@@ -17,7 +17,7 @@ jobs:
 
       - name: Remove .gitignore restrictions
         run: |
-          echo '' >| .gitignore
+          echo 'node_modules' >| .gitignore
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.2.2
