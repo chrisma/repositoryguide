@@ -1,8 +1,6 @@
 name: Build and Deploy
 on:
   push:
-    branches:
-      - 42-major-refactoring
   # Allow manual triggering
   workflow_dispatch:
 jobs:
@@ -18,7 +16,8 @@ jobs:
           npm run build
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.7
+        uses: JamesIves/github-pages-deploy-action@4.2.2
         with:
           branch: gh-pages
           folder: .
+        if: github.ref == 'refs/heads/main'
