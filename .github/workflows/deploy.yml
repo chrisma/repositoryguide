@@ -15,6 +15,10 @@ jobs:
           npm ci
           npm run build
 
+      - name: Remove .gitignore restrictions
+        run: |
+          echo 'node_modules' >| .gitignore
+
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.2.2
         with:
