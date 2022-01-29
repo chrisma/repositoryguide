@@ -33,7 +33,6 @@
         "test": "npm run eslint-check && npm run prettier-check && npm run css-lint && npm run css"
     },
     "devDependencies": {
-        "@fortawesome/fontawesome-free": "^5.15.4",
         "autoprefixer": "^10.3.1",
         "bootstrap": "^5.1.0",
         "eslint": "^7.30.0",
@@ -50,5 +49,8 @@
         "serve": "^13.0.2",
         "stylelint": "^14.3.0",
         "stylelint-config-twbs-bootstrap": "^3.0.1"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.15.4"
     }
 }
