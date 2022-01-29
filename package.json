@@ -49,8 +49,5 @@
         "serve": "^13.0.2",
         "stylelint": "^14.3.0",
         "stylelint-config-twbs-bootstrap": "^3.0.1"
-    },
-    "dependencies": {
-        "@fortawesome/fontawesome-free": "^5.15.4"
     }
 }
