@@ -1,5 +1,5 @@
 async function create_header() {
-    const response = await fetch('/assets/components/navigation-header.html')
+    const response = await fetch('../assets/components/navigation-header.html')
     return response.text()
 }
 
